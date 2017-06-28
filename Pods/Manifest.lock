@@ -27,6 +27,9 @@ PODS:
   - SAMTextField (0.1.2)
   - SAMTextView (0.2.2)
   - SAMWebView (0.2.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SSToolkit (2.0.0):
     - SAMAddressBar
     - SAMBadgeView
@@ -44,6 +47,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Masonry
+  - SDWebImage
   - SSToolkit
 
 SPEC CHECKSUMS:
@@ -61,8 +65,9 @@ SPEC CHECKSUMS:
   SAMTextField: a0f4eb5b48b45aef56453c265262b45154bc3e2a
   SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd
   SAMWebView: d141ed60d23f82a0cbfeeb952e93a690f55bc89f
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SSToolkit: 6aa7a0966ee45788d0ec3748be7d753a2fef9629
 
-PODFILE CHECKSUM: de1c27cf6fc7ee503f8870f26cb7f83a0a00809b
+PODFILE CHECKSUM: 2b79aa52eef9ebac238ca1837dcc9f31fdbf30fb
 
 COCOAPODS: 1.2.1

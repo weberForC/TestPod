@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '725FF64E93804CDD6849D407ACCDB629'
+               BlueprintIdentifier = '2E873C87D36DBE36453DB871DEF09BE2'
                BlueprintName = 'SAMGradientView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSAMGradientView.a'>

@@ -19,4 +19,5 @@ target 'TestPod' do
     pod ‘Masonry’
     pod 'AFNetworking'
     pod 'SSToolkit'
+    pod 'SDWebImage'
 end

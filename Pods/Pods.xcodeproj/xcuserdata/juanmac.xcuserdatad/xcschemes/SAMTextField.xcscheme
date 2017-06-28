@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FC8AA0FE4580A98FD4CC48DA4D081AD3'
+               BlueprintIdentifier = '4B6B91CA9E2E4B573BEB3624FE875920'
                BlueprintName = 'SAMTextField'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSAMTextField.a'>
