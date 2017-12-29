@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SAMAddressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -96,6 +101,102 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>08421CCA6981AE2C7384798172EAAED0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0B41E351A6317BA2B09A357C460A987B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>137BB9849A19485B46C4C3E799A10DCC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>427050206ECFEE13A541C054C478AE54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F5831D5A9B9408536CD9A9DCF99D7E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C463D28D51D517D7796F9BB01E91D01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>87A75B9F058CA7134C8D743DAAEF9DE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9507CE086FEA0BB1853AEB4FF96AF6F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A37DD155D988629F3C31CF24471CBFA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C24E02AA2A9BC8935A67623C6D29D67B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C94D246630DD4D47D34226C557927634</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCEC50E0FDE435B953351ADC5CDC3419</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE34227D76326683200A5FEA325685CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E14B36B1A0A1C73D2CAD8C55AAC6DDD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E277FC32981F42AC59E00389617673E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF1BB0F671B476BF55EC22D0ADAFEADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDD7AB621CED6BC82215DFC9FD9CDF94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 #import "FirstViewController.h"
+#import <ReactiveCocoa.h>
+#import <objc/runtime.h>
+#import "PerpleModel.h"
 
 @interface ViewController ()
 
 @property (nonatomic , strong) UIView *theView;
+@property (nonatomic , strong) UIScrollView *scrollView;
 
 @end
 
@@ -20,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"首页";
+//    self.title = @"首页";
     
     UIView * v  = [UIView new];
     UIView * v1 = [UIView new];
@@ -68,7 +72,6 @@
         }];
     });
     
-    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(jumpAction)];
     [v addGestureRecognizer:tap];
     
@@ -79,7 +82,25 @@
 {
     FirstViewController *firstVC = [[FirstViewController alloc] init];
     firstVC.title = @"FirstVC";
+    firstVC.delegateSingal = [RACSubject subject];
+    [firstVC.delegateSingal subscribeNext:^(id x) {
+        NSLog(@"点击事件");
+    }];
     [self.navigationController pushViewController:firstVC animated:YES];
+}
+
+- (void)setObj:(id)toObj fromObj:(id)fromObj
+{
+    unsigned int count;
+    objc_property_t *propertyList = class_copyPropertyList([toObj class], &count);
+    for (int i = 0; i < count; i++) {
+        objc_property_t pro = propertyList[i];
+        const char *name = property_getName(pro);
+        NSString *key = [NSString stringWithUTF8String:name];
+        if ([fromObj valueForKey:key]) {
+            [toObj setValue:[fromObj valueForKey:key] forKey:key];
+        }
+    }
 }
 
 

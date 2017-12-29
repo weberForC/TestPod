@@ -15,6 +15,13 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Masonry (1.0.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SAMAddressBar (0.1.0)
   - SAMBadgeView (0.1.1)
   - SAMCategories (0.5.2)
@@ -47,12 +54,14 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Masonry
+  - ReactiveCocoa (~> 2.5)
   - SDWebImage
   - SSToolkit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SAMAddressBar: ca4278987cca36a65fd8d29fae3fc5f3fa732469
   SAMBadgeView: f27d499b7f233e29277325f318a9dcdd2a8fc9e9
   SAMCategories: bf8287f7961a0b343168d1fee16338dc1626ea39
@@ -68,6 +77,6 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SSToolkit: 6aa7a0966ee45788d0ec3748be7d753a2fef9629
 
-PODFILE CHECKSUM: 2b79aa52eef9ebac238ca1837dcc9f31fdbf30fb
+PODFILE CHECKSUM: 533c1e7bb1fc7393378f6b547c3a5d1c9eb99c6a
 
 COCOAPODS: 1.2.1

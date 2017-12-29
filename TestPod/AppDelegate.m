@@ -8,6 +8,15 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WBTabbarController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "ForthViewController.h"
+#import "FifthViewController.h"
+#import "SixViewController.h"
+#import "HtmlViewController.h"
+#import "BaseNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -18,17 +27,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ViewController *VC = [[ViewController alloc] init];
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:VC];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTabBarController) name:@"changeTabBarController" object:nil];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = navi;
     
+    ViewController *VC = [[ViewController alloc] init];
+    FirstViewController *firstVC = [[FirstViewController alloc] init];
+    SecondViewController *secondVC = [[SecondViewController alloc] init];
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+    
+    NSArray *array = @[VC , firstVC , secondVC , thirdVC];
+    NSMutableArray *VCArray = [NSMutableArray array];
+    
+    for (int i = 0; i < 4; i++) {
+        UIViewController *vc = array[i];
+        vc.navigationItem.title = [NSString stringWithFormat:@"第%d个VC",i];
+        BaseNavigationController *baseNV = [[BaseNavigationController alloc] initWithRootViewController:vc];
+        [VCArray addObject:baseNV];
+    }
+    
+    WBTabbarController *tabbarVC = [[WBTabbarController alloc] initWithArray:@[@"第一个",@"第二个",@"第三个",@"第四个"]];
+    tabbarVC.viewControllers = VCArray;
+    self.window.rootViewController = tabbarVC;
     
     return YES;
 }
 
+- (void)changeTabBarController
+{
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -7,7 +7,11 @@
 //
 
 #import "RootViewController.h"
+#import <objc/runtime.h>
+
 
 @interface FirstViewController : RootViewController
+
+@property (nonatomic , strong) RACSubject *delegateSingal;
 
 @end

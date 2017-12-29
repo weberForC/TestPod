@@ -20,4 +20,5 @@ target 'TestPod' do
     pod 'AFNetworking'
     pod 'SSToolkit'
     pod 'SDWebImage'
+    pod 'ReactiveCocoa', '~> 2.5'
 end

@@ -19,7 +19,7 @@
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 #import <SSToolkit.h>
-
+#import <ReactiveCocoa.h>
 
 
 //尺寸宏定义
